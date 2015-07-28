@@ -1,6 +1,7 @@
 # json-parse
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/json-parse.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/Kikobeats/json-parse/master.svg?style=flat)](https://travis-ci.org/Kikobeats/json-parse)
 [![Dependency status](http://img.shields.io/david/Kikobeats/json-parse.svg?style=flat-square)](https://david-dm.org/Kikobeats/json-parse)
 [![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/json-parse.svg?style=flat-square)](https://david-dm.org/Kikobeats/json-parse#info=devDependencies)
 [![NPM Status](http://img.shields.io/npm/dm/json-parse.svg?style=flat-square)](https://www.npmjs.org/package/json-parse)
