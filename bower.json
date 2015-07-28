@@ -1,5 +1,5 @@
 {
-  "name": "json-parse",
+  "name": "parse-json",
   "description": "The missing JSON.parse async interface.",
   "homepage": "https://github.com/Kikobeats/parse-json",
   "version": "1.0.0",
