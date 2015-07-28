@@ -2,6 +2,7 @@
 
 var ensureAsync   = require('ensure-async');
 var promise       = require('cb2promise');
+var Errorifier    = require('errorifier');
 
 var parseAsync = ensureAsync(function(data, cb) {
   var content;
@@ -11,7 +12,10 @@ var parseAsync = ensureAsync(function(data, cb) {
     content = JSON.parse(data);
   } catch (err) {
     content = {};
-    error = new Error();
+    error = new Errorifier({
+      code: 'ENOVALIDJSON',
+      message: err.messsage
+    });
   } finally {
     return cb(error, content);
   }
