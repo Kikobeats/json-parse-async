@@ -1,14 +1,14 @@
-JSONParse   = require '..'
+parseJSON   = require '..'
 fs          = require 'fs'
 should      = require 'should'
 sampleJSON  = fs.readFileSync "#{__dirname}/sample.json", encoding: 'utf8'
 
-describe 'JSONParse ::', ->
+describe 'parseJSON ::', ->
 
   it 'as callback', (done) ->
-    JSONParse sampleJSON, done
+    parseJSON sampleJSON, done
 
   it 'as promise', (done) ->
-    JSONParse(sampleJSON).then (content) ->
+    parseJSON(sampleJSON).then (content) ->
       content.foo.should.be.equal 'bar'
       done()
