@@ -1,8 +1,8 @@
 'use strict';
 
-var ensureAsync   = require('ensure-async');
 var promise       = require('cb2promise');
 var Errorifier    = require('errorifier');
+var ensureAsync   = require('ensure-async');
 
 var parseAsync = ensureAsync(function(data, cb) {
   var content;
