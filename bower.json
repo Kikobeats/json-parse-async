@@ -1,0 +1,32 @@
+{
+  "name": "json-parse",
+  "description": "The missing JSON.parse async interface.",
+  "homepage": "https://github.com/Kikobeats/parse-json",
+  "version": "1.0.0",
+  "main": "./dist/parse-json.js",
+  "authors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com",
+      "homepage": "https://github.com/Kikobeats"
+    }
+  ],
+  "repository": "Kikobeats/parse-json",
+  "bugs": {
+    "url": "https://github.com/Kikobeats/parse-json/issues"
+  },
+  "keywords": [
+    "JSON",
+    "parse",
+    "async",
+    "promise"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
