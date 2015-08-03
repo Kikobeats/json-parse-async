@@ -1,10 +1,10 @@
-# parse-json
+# json-parse-async
 
-![Last version](https://img.shields.io/github/tag/Kikobeats/parse-json.svg?style=flat-square)
-[![Build Status](http://img.shields.io/travis/Kikobeats/parse-json/master.svg?style=flat)](https://travis-ci.org/Kikobeats/parse-json)
-[![Dependency status](http://img.shields.io/david/Kikobeats/parse-json.svg?style=flat-square)](https://david-dm.org/Kikobeats/parse-json)
-[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/parse-json.svg?style=flat-square)](https://david-dm.org/Kikobeats/parse-json#info=devDependencies)
-[![NPM Status](http://img.shields.io/npm/dm/parse-json.svg?style=flat-square)](https://www.npmjs.org/package/parse-json)
+![Last version](https://img.shields.io/github/tag/Kikobeats/json-parse-async.svg?style=flat-square)
+[![Build Status](http://img.shields.io/travis/Kikobeats/json-parse-async/master.svg?style=flat)](https://travis-ci.org/Kikobeats/json-parse-async)
+[![Dependency status](http://img.shields.io/david/Kikobeats/json-parse-async.svg?style=flat-square)](https://david-dm.org/Kikobeats/json-parse-async)
+[![Dev Dependencies Status](http://img.shields.io/david/dev/Kikobeats/json-parse-async.svg?style=flat-square)](https://david-dm.org/Kikobeats/json-parse-async#info=devDependencies)
+[![NPM Status](http://img.shields.io/npm/dm/json-parse-async.svg?style=flat-square)](https://www.npmjs.org/package/json-parse-async)
 [![Gratipay](https://img.shields.io/gratipay/Kikobeats.svg?style=flat-square)](https://gratipay.com/~Kikobeats/)
 
 > The missing JSON.parse async interface.
@@ -12,25 +12,25 @@
 ## Install
 
 ```bash
-npm install parse-json --save
+npm install json-parse-async --save
 ```
 
 If you want to use in the browser (powered by [Browserify](http://browserify.org/)):
 
 ```bash
-bower install parse-json --save
+bower install json-parse-async --save
 ```
 
 and later link in your HTML:
 
 ```html
-<script src="bower_components/parse-json/dist/parse-json.js"></script>
+<script src="bower_components/json-parse-async/dist/json-parse-async.js"></script>
 ```
 
 ## Usage
 
 ```js
-var parseJSON = require('parse-json');
+var parseJSON = require('json-parse-async');
 var stringify = '{"foo":"bar"}';
 
 // as callback interface
