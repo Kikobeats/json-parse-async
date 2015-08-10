@@ -4,6 +4,26 @@ var promise     = require('cb2promise');
 var Errorifier  = require('errorifier');
 var ensureAsync = require('ensure-async');
 
+var hasFetchAPI = !!(global || window).Request;
+
+var fetchParse = function(string, cb) {
+  var jsonPromise = (new Response(string)).json();
+  if (!cb) {
+    return jsonPromise;
+  }
+
+  jsonPromise.then(function(content) {
+    cb(content);
+  }).catch(function(err) {
+    cb(
+      new Errorifier({
+        code: 'ENOVALIDJSON',
+        message: err.message
+      })
+    );
+  });
+}
+
 var parseAsync = ensureAsync(function(data, cb) {
   var content;
   var error;
@@ -22,8 +42,11 @@ var parseAsync = ensureAsync(function(data, cb) {
 });
 
 function parseJSON(data, cb) {
-  if (arguments.length === 1) return promise(parseAsync, data);
+  if (arguments.length === 1) {
+    return promise(parseAsync, data);
+  }
   return parseAsync(data, cb);
 }
 
-module.exports = parseJSON;
+
+module.exports = hasFetchAPI ? fetchParse : parseJSON;
