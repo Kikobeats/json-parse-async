@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "cb2promise": "~1.0.0",
-    "ensure-async": "~1.0.0",
     "errorifier": "~0.1.3"
   },
   "devDependencies": {

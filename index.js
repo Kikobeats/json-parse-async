@@ -2,9 +2,8 @@
 
 var promise     = require('cb2promise');
 var Errorifier  = require('errorifier');
-var ensureAsync = require('ensure-async');
 
-var parseAsync = ensureAsync(function(data, cb) {
+var parseAsync = function(data, cb) {
   var content;
   var error;
 
@@ -17,9 +16,11 @@ var parseAsync = ensureAsync(function(data, cb) {
       message: err.message
     });
   } finally {
-    return cb(error, content);
+    return process.nextTick(function() {
+      return cb(error, content);
+    });
   }
-});
+};
 
 function parseJSON(data, cb) {
   if (arguments.length === 1) return promise(parseAsync, data);
