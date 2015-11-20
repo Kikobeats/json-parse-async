@@ -2,7 +2,7 @@
   "name": "json-parse-async",
   "description": "The missing JSON.parse async interface.",
   "homepage": "https://github.com/Kikobeats/json-parse-async",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./index.js",
   "author": {
     "name": "Kiko Beats",
