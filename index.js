@@ -1,7 +1,7 @@
 'use strict';
 
-var promise     = require('cb2promise');
-var Errorifier  = require('errorifier');
+var promise = require('cb2promise');
+var Whoops  = require('whoops');
 
 var parseAsync = function(data, cb) {
   var content;
@@ -11,7 +11,7 @@ var parseAsync = function(data, cb) {
     content = JSON.parse(data);
   } catch (err) {
     content = {};
-    error = new Errorifier({
+    error = new Whoops({
       code: 'ENOVALIDJSON',
       message: err.message
     });
