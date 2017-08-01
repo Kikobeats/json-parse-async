@@ -8,7 +8,6 @@ describe 'parseJSON ::', ->
   it 'as callback', (done) ->
     parseJSON sampleJSON, done
 
-  it 'as promise', (done) ->
+  it 'as promise', ->
     parseJSON(sampleJSON).then (content) ->
       content.foo.should.be.equal 'bar'
-      done()
