@@ -3,12 +3,12 @@
 var promise = require('cb2promise');
 var Whoops  = require('whoops');
 
-var parseAsync = function(data, cb) {
+var parseAsync = function(data, parse_method, cb) {
   var content;
   var error;
 
   try {
-    content = JSON.parse(data);
+    content = parse_method(data);
   } catch (err) {
     content = {};
     error = new Whoops({
@@ -22,9 +22,9 @@ var parseAsync = function(data, cb) {
   }
 };
 
-function parseJSON(data, cb) {
-  if (arguments.length === 1) return promise(parseAsync, data);
-  return parseAsync(data, cb);
+function parseJSON(data, cb, parse_method = JSON.parse) {
+  if (!cb) return promise(parseAsync, data, parse_method);
+  return parseAsync(data, parse_method, cb);
 }
 
 module.exports = parseJSON;
