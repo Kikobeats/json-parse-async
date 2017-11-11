@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "cb2promise": "~1.1.0",
-    "whoops": "~3.1.0"
+    "whoops": "~4.0.1"
   },
   "devDependencies": {
     "browserify": "latest",
