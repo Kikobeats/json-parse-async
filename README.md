@@ -1,5 +1,7 @@
 # json-parse-async
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/json-parse-async.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/Kikobeats/json-parse-async.svg?style=flat-square)
 [![Build Status](http://img.shields.io/travis/Kikobeats/json-parse-async/master.svg?style=flat-square)](https://travis-ci.org/Kikobeats/json-parse-async)
 [![Dependency status](http://img.shields.io/david/Kikobeats/json-parse-async.svg?style=flat-square)](https://david-dm.org/Kikobeats/json-parse-async)
