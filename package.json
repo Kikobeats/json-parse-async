@@ -20,7 +20,7 @@
     "promise"
   ],
   "dependencies": {
-    "cb2promise": "~1.1.0",
+    "cb2promise": "~1.1.1",
     "whoops": "~4.0.1"
   },
   "devDependencies": {
